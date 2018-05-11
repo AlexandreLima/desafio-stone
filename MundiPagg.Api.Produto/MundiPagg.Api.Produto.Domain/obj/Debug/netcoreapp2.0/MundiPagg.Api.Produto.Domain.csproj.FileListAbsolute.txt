@@ -1,0 +1,6 @@
+C:\Users\User\Documents\Develop\git\desafio-stone\desafio-stone\MundiPagg.Api.Produto\MundiPagg.Api.Produto.Domain\bin\Debug\netcoreapp2.0\MundiPagg.Api.Produto.Domain.deps.json
+C:\Users\User\Documents\Develop\git\desafio-stone\desafio-stone\MundiPagg.Api.Produto\MundiPagg.Api.Produto.Domain\bin\Debug\netcoreapp2.0\MundiPagg.Api.Produto.Domain.dll
+C:\Users\User\Documents\Develop\git\desafio-stone\desafio-stone\MundiPagg.Api.Produto\MundiPagg.Api.Produto.Domain\obj\Debug\netcoreapp2.0\MundiPagg.Api.Produto.Domain.csprojResolveAssemblyReference.cache
+C:\Users\User\Documents\Develop\git\desafio-stone\desafio-stone\MundiPagg.Api.Produto\MundiPagg.Api.Produto.Domain\obj\Debug\netcoreapp2.0\MundiPagg.Api.Produto.Domain.csproj.CoreCompileInputs.cache
+C:\Users\User\Documents\Develop\git\desafio-stone\desafio-stone\MundiPagg.Api.Produto\MundiPagg.Api.Produto.Domain\obj\Debug\netcoreapp2.0\MundiPagg.Api.Produto.Domain.AssemblyInfoInputs.cache
+C:\Users\User\Documents\Develop\git\desafio-stone\desafio-stone\MundiPagg.Api.Produto\MundiPagg.Api.Produto.Domain\obj\Debug\netcoreapp2.0\MundiPagg.Api.Produto.Domain.AssemblyInfo.cs

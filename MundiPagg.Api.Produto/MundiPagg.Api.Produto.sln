@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2002
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MundiPagg.Api.Product.Api", "WebApplication1\MundiPagg.Api.Product.Api.csproj", "{0D8EC9C8-29DD-458E-AC59-635FCC5369A1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MundiPagg.Api.Product.Domain", "MundiPagg.Api.Produto.Domain\MundiPagg.Api.Product.Domain.csproj", "{08DD7EF9-6EAE-4587-A290-1A805E50A9ED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MundiPagg.Api.Product.Application", "MundiPagg.Api.Product.Application\MundiPagg.Api.Product.Application.csproj", "{DAC07CAA-D9A8-4216-BACC-93A2EA4B9451}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MundPagg.Api.Product.Dto", "MundPagg.Api.Product.Dto\MundPagg.Api.Product.Dto.csproj", "{C3F7AB31-B3C7-4054-97FF-B2C8C682033C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MundiPagg.Api.Product.Data.Mongo", "MundiPagg.Api.Product.Data.Mongo\MundiPagg.Api.Product.Data.Mongo.csproj", "{A136B42A-6EB2-4FB5-9EBE-5DC1697E9F30}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0D8EC9C8-29DD-458E-AC59-635FCC5369A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D8EC9C8-29DD-458E-AC59-635FCC5369A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D8EC9C8-29DD-458E-AC59-635FCC5369A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D8EC9C8-29DD-458E-AC59-635FCC5369A1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{08DD7EF9-6EAE-4587-A290-1A805E50A9ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08DD7EF9-6EAE-4587-A290-1A805E50A9ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08DD7EF9-6EAE-4587-A290-1A805E50A9ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08DD7EF9-6EAE-4587-A290-1A805E50A9ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DAC07CAA-D9A8-4216-BACC-93A2EA4B9451}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DAC07CAA-D9A8-4216-BACC-93A2EA4B9451}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DAC07CAA-D9A8-4216-BACC-93A2EA4B9451}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DAC07CAA-D9A8-4216-BACC-93A2EA4B9451}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3F7AB31-B3C7-4054-97FF-B2C8C682033C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3F7AB31-B3C7-4054-97FF-B2C8C682033C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3F7AB31-B3C7-4054-97FF-B2C8C682033C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3F7AB31-B3C7-4054-97FF-B2C8C682033C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A136B42A-6EB2-4FB5-9EBE-5DC1697E9F30}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A136B42A-6EB2-4FB5-9EBE-5DC1697E9F30}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A136B42A-6EB2-4FB5-9EBE-5DC1697E9F30}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A136B42A-6EB2-4FB5-9EBE-5DC1697E9F30}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {87F2A2EB-D536-4EAE-B31F-E637EFFF1383}
+	EndGlobalSection
+EndGlobal

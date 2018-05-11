@@ -1,0 +1,15 @@
+networks:
+  default:
+    external:
+      name: nat
+services:
+  webapplication1:
+    build:
+      context: C:\Users\User\Documents\Develop\git\desafio-stone\desafio-stone\MundiPagg.Api.Produto
+      dockerfile: WebApplication1\Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+    image: webapplication1
+    ports:
+    - 80/tcp
+version: '3.0'

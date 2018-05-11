@@ -1,0 +1,12 @@
+C:\Users\User\Documents\Develop\git\desafio-stone\desafio-stone\MundiPagg.Api.Produto\MundiPagg.Api.Product.Data.Mongo\bin\Debug\netcoreapp2.0\MundiPagg.Api.Product.Domain.dll
+C:\Users\User\Documents\Develop\git\desafio-stone\desafio-stone\MundiPagg.Api.Produto\MundiPagg.Api.Product.Data.Mongo\obj\Debug\netcoreapp2.0\MundiPagg.Api.Product.Data.Mongo.csprojResolveAssemblyReference.cache
+C:\Users\User\Documents\Develop\git\desafio-stone\desafio-stone\MundiPagg.Api.Produto\MundiPagg.Api.Product.Data.Mongo\obj\Debug\netcoreapp2.0\MundiPagg.Api.Product.Data.Mongo.csproj.CoreCompileInputs.cache
+C:\Users\User\Documents\Develop\git\desafio-stone\desafio-stone\MundiPagg.Api.Produto\MundiPagg.Api.Product.Data.Mongo\obj\Debug\netcoreapp2.0\MundiPagg.Api.Product.Data.Mongo.AssemblyInfoInputs.cache
+C:\Users\User\Documents\Develop\git\desafio-stone\desafio-stone\MundiPagg.Api.Produto\MundiPagg.Api.Product.Data.Mongo\obj\Debug\netcoreapp2.0\MundiPagg.Api.Product.Data.Mongo.AssemblyInfo.cs
+C:\Users\User\Documents\Develop\git\desafio-stone\desafio-stone\MundiPagg.Api.Produto\MundiPagg.Api.Product.Data.Mongo\bin\Debug\netcoreapp2.0\MundiPagg.Api.Product.Data.Mongo.deps.json
+C:\Users\User\Documents\Develop\git\desafio-stone\desafio-stone\MundiPagg.Api.Produto\MundiPagg.Api.Product.Data.Mongo\bin\Debug\netcoreapp2.0\MundiPagg.Api.Product.Data.Mongo.dll
+C:\Users\User\Documents\Develop\git\desafio-stone\desafio-stone\MundiPagg.Api.Produto\MundiPagg.Api.Product.Data.Mongo\bin\Debug\netcoreapp2.0\MundiPagg.Api.Product.Data.Mongo.pdb
+C:\Users\User\Documents\Develop\git\desafio-stone\desafio-stone\MundiPagg.Api.Produto\MundiPagg.Api.Product.Data.Mongo\bin\Debug\netcoreapp2.0\MundiPagg.Api.Product.Domain.pdb
+C:\Users\User\Documents\Develop\git\desafio-stone\desafio-stone\MundiPagg.Api.Produto\MundiPagg.Api.Product.Data.Mongo\obj\Debug\netcoreapp2.0\MundiPagg.Api.Product.Data.Mongo.csproj.CopyComplete
+C:\Users\User\Documents\Develop\git\desafio-stone\desafio-stone\MundiPagg.Api.Produto\MundiPagg.Api.Product.Data.Mongo\obj\Debug\netcoreapp2.0\MundiPagg.Api.Product.Data.Mongo.dll
+C:\Users\User\Documents\Develop\git\desafio-stone\desafio-stone\MundiPagg.Api.Produto\MundiPagg.Api.Product.Data.Mongo\obj\Debug\netcoreapp2.0\MundiPagg.Api.Product.Data.Mongo.pdb

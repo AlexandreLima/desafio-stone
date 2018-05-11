@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MundiPagg.Api.Produto.Domain\MundiPagg.Api.Product.Domain.csproj" />
+    <ProjectReference Include="..\MundPagg.Api.Product.Dto\MundPagg.Api.Product.Dto.csproj" />
+  </ItemGroup>
+
+</Project>
