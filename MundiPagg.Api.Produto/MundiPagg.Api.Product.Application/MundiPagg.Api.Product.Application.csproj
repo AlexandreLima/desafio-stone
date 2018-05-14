@@ -5,6 +5,11 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="MongoDB.Driver" Version="2.6.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MundiPagg.Api.Product.Data.Mongo\MundiPagg.Api.Product.Data.Mongo.csproj" />
     <ProjectReference Include="..\MundiPagg.Api.Produto.Domain\MundiPagg.Api.Product.Domain.csproj" />
     <ProjectReference Include="..\MundPagg.Api.Product.Dto\MundPagg.Api.Product.Dto.csproj" />
   </ItemGroup>

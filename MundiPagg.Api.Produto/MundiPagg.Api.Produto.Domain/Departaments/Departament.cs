@@ -2,11 +2,16 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace MundiPagg.Api.Product.Domain.Departaments
+namespace MundiPagg.Api.Products.Domain.Departaments
 {
     public class Departament
     {
-        public string Name { get; set; }
+        public Departament(string name)
+        {
+            Name = name;
+        }
+
+        public string Name { get; private set; }
 
     }
 }

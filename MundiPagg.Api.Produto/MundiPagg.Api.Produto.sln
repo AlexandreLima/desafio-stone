@@ -3,15 +3,21 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27428.2002
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MundiPagg.Api.Product.Api", "WebApplication1\MundiPagg.Api.Product.Api.csproj", "{0D8EC9C8-29DD-458E-AC59-635FCC5369A1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MundiPagg.Api.Product.Api", "WebApplication1\MundiPagg.Api.Product.Api.csproj", "{0D8EC9C8-29DD-458E-AC59-635FCC5369A1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MundiPagg.Api.Product.Domain", "MundiPagg.Api.Produto.Domain\MundiPagg.Api.Product.Domain.csproj", "{08DD7EF9-6EAE-4587-A290-1A805E50A9ED}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MundiPagg.Api.Product.Domain", "MundiPagg.Api.Produto.Domain\MundiPagg.Api.Product.Domain.csproj", "{08DD7EF9-6EAE-4587-A290-1A805E50A9ED}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MundiPagg.Api.Product.Application", "MundiPagg.Api.Product.Application\MundiPagg.Api.Product.Application.csproj", "{DAC07CAA-D9A8-4216-BACC-93A2EA4B9451}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MundiPagg.Api.Product.Application", "MundiPagg.Api.Product.Application\MundiPagg.Api.Product.Application.csproj", "{DAC07CAA-D9A8-4216-BACC-93A2EA4B9451}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MundPagg.Api.Product.Dto", "MundPagg.Api.Product.Dto\MundPagg.Api.Product.Dto.csproj", "{C3F7AB31-B3C7-4054-97FF-B2C8C682033C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MundPagg.Api.Product.Dto", "MundPagg.Api.Product.Dto\MundPagg.Api.Product.Dto.csproj", "{C3F7AB31-B3C7-4054-97FF-B2C8C682033C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MundiPagg.Api.Product.Data.Mongo", "MundiPagg.Api.Product.Data.Mongo\MundiPagg.Api.Product.Data.Mongo.csproj", "{A136B42A-6EB2-4FB5-9EBE-5DC1697E9F30}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MundiPagg.Api.Product.Data.Mongo", "MundiPagg.Api.Product.Data.Mongo\MundiPagg.Api.Product.Data.Mongo.csproj", "{A136B42A-6EB2-4FB5-9EBE-5DC1697E9F30}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{F4784045-5922-46CB-84CB-D359030E1342}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MundiPagg.Api.Product.UnitTest", "MundiPagg.Api.Product.UnitTest\MundiPagg.Api.Product.UnitTest.csproj", "{BB02A034-AB5A-4A47-BD73-E2A70F6E0F01}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MundiPagg.Api.Product.Ioc", "MundiPagg.Api.Product.Ioc\MundiPagg.Api.Product.Ioc.csproj", "{481A7067-2E84-4532-B178-01D2BA2AE470}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,9 +45,20 @@ Global
 		{A136B42A-6EB2-4FB5-9EBE-5DC1697E9F30}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A136B42A-6EB2-4FB5-9EBE-5DC1697E9F30}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A136B42A-6EB2-4FB5-9EBE-5DC1697E9F30}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB02A034-AB5A-4A47-BD73-E2A70F6E0F01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB02A034-AB5A-4A47-BD73-E2A70F6E0F01}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB02A034-AB5A-4A47-BD73-E2A70F6E0F01}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB02A034-AB5A-4A47-BD73-E2A70F6E0F01}.Release|Any CPU.Build.0 = Release|Any CPU
+		{481A7067-2E84-4532-B178-01D2BA2AE470}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{481A7067-2E84-4532-B178-01D2BA2AE470}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{481A7067-2E84-4532-B178-01D2BA2AE470}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{481A7067-2E84-4532-B178-01D2BA2AE470}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{BB02A034-AB5A-4A47-BD73-E2A70F6E0F01} = {F4784045-5922-46CB-84CB-D359030E1342}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {87F2A2EB-D536-4EAE-B31F-E637EFFF1383}

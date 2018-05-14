@@ -1,10 +1,10 @@
 ﻿using MongoDB.Bson;
-using MundiPagg.Api.Product.Domain.Utilities;
+using MundiPagg.Api.Products.Domain.Utilities;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace MundiPagg.Api.Product.Domain.Repository
+namespace MundiPagg.Api.Products.Domain.Repository
 {
     public interface IRepository<TType, Key> where TType : IAggregateRoot<Key>
     {
@@ -14,8 +14,8 @@ namespace MundiPagg.Api.Product.Domain.Repository
 
         void Remove(Key id);
 
-        void Get(Key id);
+        TType Get(Key id);
 
-        void GetAll(int pagin, int paginRows);
+        IEnumerable<TType> GetAll(int pagin, int paginRows);
     }
 }

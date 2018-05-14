@@ -4,7 +4,7 @@ using System.Text;
 using Microsoft.Extensions.Configuration;
 using MongoDB.Driver;
 
-namespace MundiPagg.Api.Product.Data.Mongo.Context
+namespace MundiPagg.Api.Products.Data.Mongo.Context
 {
     public abstract class BaseRepository
     {
@@ -15,10 +15,10 @@ namespace MundiPagg.Api.Product.Data.Mongo.Context
         {
             _configuration = config;
 
-            MongoClient client = new MongoClient(
-                _configuration.GetConnectionString("ConexaoCatalogo"));
+            MongoClient client = new MongoClient("mongodb+srv://product:product@cluster0-hima1.mongodb.net/test?retryWrites=true");
+                //_configuration.GetConnectionString("ConexaoCatalogo"));
 
-            db = client.GetDatabase("DBCatalogo");
+            db = client.GetDatabase("ProductCatalog");
         }
     }
 }

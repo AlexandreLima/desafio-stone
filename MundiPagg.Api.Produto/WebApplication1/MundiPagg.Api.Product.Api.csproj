@@ -20,6 +20,7 @@
   <ItemGroup>
     <ProjectReference Include="..\MundiPagg.Api.Product.Application\MundiPagg.Api.Product.Application.csproj" />
     <ProjectReference Include="..\MundiPagg.Api.Product.Data.Mongo\MundiPagg.Api.Product.Data.Mongo.csproj" />
+    <ProjectReference Include="..\MundiPagg.Api.Product.Ioc\MundiPagg.Api.Product.Ioc.csproj" />
   </ItemGroup>
 
 </Project>

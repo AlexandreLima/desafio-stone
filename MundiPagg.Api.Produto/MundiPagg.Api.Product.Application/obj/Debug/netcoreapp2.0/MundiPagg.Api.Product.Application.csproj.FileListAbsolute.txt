@@ -12,3 +12,5 @@ C:\Users\User\Documents\Develop\git\desafio-stone\desafio-stone\MundiPagg.Api.Pr
 C:\Users\User\Documents\Develop\git\desafio-stone\desafio-stone\MundiPagg.Api.Produto\MundiPagg.Api.Product.Application\obj\Debug\netcoreapp2.0\MundiPagg.Api.Product.Application.csproj.CopyComplete
 C:\Users\User\Documents\Develop\git\desafio-stone\desafio-stone\MundiPagg.Api.Produto\MundiPagg.Api.Product.Application\obj\Debug\netcoreapp2.0\MundiPagg.Api.Product.Application.dll
 C:\Users\User\Documents\Develop\git\desafio-stone\desafio-stone\MundiPagg.Api.Produto\MundiPagg.Api.Product.Application\obj\Debug\netcoreapp2.0\MundiPagg.Api.Product.Application.pdb
+C:\Users\User\Documents\Develop\git\desafio-stone\desafio-stone\MundiPagg.Api.Produto\MundiPagg.Api.Product.Application\bin\Debug\netcoreapp2.0\MundiPagg.Api.Product.Data.Mongo.dll
+C:\Users\User\Documents\Develop\git\desafio-stone\desafio-stone\MundiPagg.Api.Produto\MundiPagg.Api.Product.Application\bin\Debug\netcoreapp2.0\MundiPagg.Api.Product.Data.Mongo.pdb

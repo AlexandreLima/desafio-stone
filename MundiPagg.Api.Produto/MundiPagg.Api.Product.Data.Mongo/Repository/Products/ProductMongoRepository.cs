@@ -1,15 +1,18 @@
 ﻿using MongoDB.Bson;
-using MundiPagg.Api.Product.Domain.Repository;
-using MundiPagg.Api.Product.Domain.Products;
+using MundiPagg.Api.Products.Domain.Repository;
+using MundiPagg.Api.Products.Domain.Products;
 using System;
 using System.Collections.Generic;
 using System.Text;
-using MundiPagg.Api.Product.Data.Mongo.Context;
+using MundiPagg.Api.Products.Data.Mongo.Context;
 using Microsoft.Extensions.Configuration;
+using MundiPagg.Api.Products.Data.Mongo.Repository.Products.Contract;
+using MongoDB.Driver;
+using System.Linq;
 
-namespace MundiPagg.Api.Product.Data.Mongo.Repository.Products
+namespace MundiPagg.Api.Products.Data.Mongo.Repository.Products
 {
-    public class ProductMongoRepository : BaseRepository, IRepository<Domain.Products.Product, ObjectId>
+    public class ProductMongoRepository : BaseRepository, IProductMongoRepository
     {
         public ProductMongoRepository(IConfiguration configuration) 
             : base(configuration)
@@ -18,27 +21,34 @@ namespace MundiPagg.Api.Product.Data.Mongo.Repository.Products
         }
         public void Add(Domain.Products.Product entity)
         {
-            throw new NotImplementedException();
+            this.db.GetCollection<Product>("Product").InsertOne(entity);
         }
 
         public void Edit(Domain.Products.Product entity)
         {
-            throw new NotImplementedException();
+            this.db.GetCollection<Product>("Product")
+                    .ReplaceOne(x => x.ID == entity.ID, entity);
         }
 
-        public void Get(ObjectId id)
+        public Product Get(ObjectId id)
         {
-            throw new NotImplementedException();
+            return this.db.GetCollection<Product>("Product")
+                    .Find(x => x.ID == id)
+                    .FirstOrDefault();
         }
 
-        public void GetAll(int pagin, int paginRows)
+        public IEnumerable<Product> GetAll(int pagin, int paginRows)
         {
-            throw new NotImplementedException();
-        }
+            return this.db.GetCollection<Product>("Product")
+                            .AsQueryable()
+                            .Skip(pagin)
+                            .Take(paginRows)
+                            .ToList();
+         }
 
         public void Remove(ObjectId id)
         {
-            throw new NotImplementedException();
+            this.db.GetCollection<Product>("Product").DeleteOne(x => x.ID == id);
         }
     }
 }

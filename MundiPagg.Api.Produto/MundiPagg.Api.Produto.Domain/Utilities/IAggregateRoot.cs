@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace MundiPagg.Api.Product.Domain.Utilities
+namespace MundiPagg.Api.Products.Domain.Utilities
 {
     public interface IAggregateRoot<T>
     {

@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace MundiPagg.Api.Product.Application.Products.Contracts
+namespace MundiPagg.Api.Products.Application.Products.Contracts
 {
     public interface IProductApplication
     {
