@@ -1,0 +1,9 @@
+C:\Users\User\Documents\Develop\git\desafio-stone\desafio-stone\MundiPagg.Api.Produto\MundPagg.Api.Product.Dto\bin\Debug\netcoreapp2.0\MundPagg.Api.Products.Dto.deps.json
+C:\Users\User\Documents\Develop\git\desafio-stone\desafio-stone\MundiPagg.Api.Produto\MundPagg.Api.Product.Dto\bin\Debug\netcoreapp2.0\MundPagg.Api.Products.Dto.dll
+C:\Users\User\Documents\Develop\git\desafio-stone\desafio-stone\MundiPagg.Api.Produto\MundPagg.Api.Product.Dto\bin\Debug\netcoreapp2.0\MundPagg.Api.Products.Dto.pdb
+C:\Users\User\Documents\Develop\git\desafio-stone\desafio-stone\MundiPagg.Api.Produto\MundPagg.Api.Product.Dto\obj\Debug\netcoreapp2.0\MundPagg.Api.Products.Dto.csprojResolveAssemblyReference.cache
+C:\Users\User\Documents\Develop\git\desafio-stone\desafio-stone\MundiPagg.Api.Produto\MundPagg.Api.Product.Dto\obj\Debug\netcoreapp2.0\MundPagg.Api.Products.Dto.csproj.CoreCompileInputs.cache
+C:\Users\User\Documents\Develop\git\desafio-stone\desafio-stone\MundiPagg.Api.Produto\MundPagg.Api.Product.Dto\obj\Debug\netcoreapp2.0\MundPagg.Api.Products.Dto.AssemblyInfoInputs.cache
+C:\Users\User\Documents\Develop\git\desafio-stone\desafio-stone\MundiPagg.Api.Produto\MundPagg.Api.Product.Dto\obj\Debug\netcoreapp2.0\MundPagg.Api.Products.Dto.AssemblyInfo.cs
+C:\Users\User\Documents\Develop\git\desafio-stone\desafio-stone\MundiPagg.Api.Produto\MundPagg.Api.Product.Dto\obj\Debug\netcoreapp2.0\MundPagg.Api.Products.Dto.dll
+C:\Users\User\Documents\Develop\git\desafio-stone\desafio-stone\MundiPagg.Api.Produto\MundPagg.Api.Product.Dto\obj\Debug\netcoreapp2.0\MundPagg.Api.Products.Dto.pdb

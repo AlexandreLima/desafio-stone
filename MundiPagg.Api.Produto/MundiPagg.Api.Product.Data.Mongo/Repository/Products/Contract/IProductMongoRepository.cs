@@ -6,7 +6,7 @@ using System.Text;
 
 namespace MundiPagg.Api.Products.Data.Mongo.Repository.Products.Contract
 {
-    public interface IProductMongoRepository : IRepository<Domain.Products.Product, ObjectId>
+    public interface IProductMongoRepository : IRepository<Domain.Products.Product, Guid>
     {
 
     }

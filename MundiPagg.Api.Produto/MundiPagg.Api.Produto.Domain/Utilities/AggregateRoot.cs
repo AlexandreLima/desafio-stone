@@ -1,17 +1,16 @@
 ﻿using MongoDB.Bson;
+using MongoDB.Bson.Serialization.Attributes;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace MundiPagg.Api.Products.Domain.Utilities
 {
-    public abstract class AggregateRoot : IAggregateRoot<ObjectId>
+    public abstract class AggregateRoot : IAggregateRoot<Guid>
     {
-        public AggregateRoot()
-        {
-            this.ID = new ObjectId();
-        }
+        public AggregateRoot() => this.Id = Guid.NewGuid();
 
-        public ObjectId ID { get; private set; }
+        [BsonId]
+        public Guid Id { get; private set; }
     }
 }

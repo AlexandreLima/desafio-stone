@@ -2,6 +2,55 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v2.0": {
+      "AutoMapper/6.2.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.CSharp": "4.3.0",
+          "NETStandard.Library": "1.6.1",
+          "System.Collections.Concurrent": "4.3.0",
+          "System.Collections.Specialized": "4.3.0",
+          "System.ComponentModel.TypeConverter": "4.3.0",
+          "System.Dynamic.Runtime": "4.3.0",
+          "System.Linq.Queryable": "4.3.0",
+          "System.Reflection.Emit": "4.3.0",
+          "System.Resources.ResourceManager": "4.3.0",
+          "System.Runtime.Serialization.Primitives": "4.3.0",
+          "System.Text.RegularExpressions": "4.3.0"
+        },
+        "compile": {
+          "lib/netstandard1.3/AutoMapper.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.3/AutoMapper.dll": {}
+        }
+      },
+      "AutoMapper.Extensions/1.0.0": {
+        "type": "package",
+        "dependencies": {
+          "AutoMapper": "6.2.0",
+          "NETStandard.Library": "1.6.1"
+        },
+        "compile": {
+          "lib/netstandard1.3/AutoMapper.Extensions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.3/AutoMapper.Extensions.dll": {}
+        }
+      },
+      "AutoMapper.Extensions.Microsoft.DependencyInjection/3.2.0": {
+        "type": "package",
+        "dependencies": {
+          "AutoMapper": "6.1.1",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "2.0.0",
+          "Microsoft.Extensions.DependencyModel": "2.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll": {}
+        }
+      },
       "DnsClient/1.0.7": {
         "type": "package",
         "dependencies": {
@@ -4062,17 +4111,17 @@
           "lib/netstandard1.6/System.Linq.Expressions.dll": {}
         }
       },
-      "System.Linq.Queryable/4.0.1": {
+      "System.Linq.Queryable/4.3.0": {
         "type": "package",
         "dependencies": {
-          "System.Collections": "4.0.11",
-          "System.Diagnostics.Debug": "4.0.11",
-          "System.Linq": "4.1.0",
-          "System.Linq.Expressions": "4.1.0",
-          "System.Reflection": "4.1.0",
-          "System.Reflection.Extensions": "4.0.1",
-          "System.Resources.ResourceManager": "4.0.1",
-          "System.Runtime": "4.1.0"
+          "System.Collections": "4.3.0",
+          "System.Diagnostics.Debug": "4.3.0",
+          "System.Linq": "4.3.0",
+          "System.Linq.Expressions": "4.3.0",
+          "System.Reflection": "4.3.0",
+          "System.Reflection.Extensions": "4.3.0",
+          "System.Resources.ResourceManager": "4.3.0",
+          "System.Runtime": "4.3.0"
         },
         "compile": {
           "ref/netstandard1.0/System.Linq.Queryable.dll": {}
@@ -5408,51 +5457,72 @@
           "build/netcoreapp1.0/_._": {}
         }
       },
-      "MundiPagg.Api.Product.Application/1.0.0": {
+      "MundiPagg.Api.Products.Application/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.0",
         "dependencies": {
+          "AutoMapper": "6.2.2",
           "MongoDB.Driver": "2.6.0",
-          "MundPagg.Api.Product.Dto": "1.0.0",
-          "MundiPagg.Api.Product.Data.Mongo": "1.0.0",
-          "MundiPagg.Api.Product.Domain": "1.0.0"
+          "MundPagg.Api.Products.Dto": "1.0.0",
+          "MundiPagg.Api.Products.Data.Mongo": "1.0.0",
+          "MundiPagg.Api.Products.Domain": "1.0.0"
         },
         "compile": {
-          "bin/placeholder/MundiPagg.Api.Product.Application.dll": {}
+          "bin/placeholder/MundiPagg.Api.Products.Application.dll": {}
         },
         "runtime": {
-          "bin/placeholder/MundiPagg.Api.Product.Application.dll": {}
+          "bin/placeholder/MundiPagg.Api.Products.Application.dll": {}
         }
       },
-      "MundiPagg.Api.Product.Data.Mongo/1.0.0": {
+      "MundiPagg.Api.Products.Data.Mongo/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.0",
         "dependencies": {
           "Microsoft.Extensions.Configuration": "2.0.2",
           "MongoDB.Driver": "2.6.0",
-          "MundiPagg.Api.Product.Domain": "1.0.0"
+          "MundiPagg.Api.Products.Domain": "1.0.0",
+          "MundiPagg.Api.Products.Infrastructrure": "1.0.0"
         },
         "compile": {
-          "bin/placeholder/MundiPagg.Api.Product.Data.Mongo.dll": {}
+          "bin/placeholder/MundiPagg.Api.Products.Data.Mongo.dll": {}
         },
         "runtime": {
-          "bin/placeholder/MundiPagg.Api.Product.Data.Mongo.dll": {}
+          "bin/placeholder/MundiPagg.Api.Products.Data.Mongo.dll": {}
         }
       },
-      "MundiPagg.Api.Product.Domain/1.0.0": {
+      "MundiPagg.Api.Products.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.0",
         "dependencies": {
           "MongoDB.Driver": "2.6.0"
         },
         "compile": {
-          "bin/placeholder/MundiPagg.Api.Product.Domain.dll": {}
+          "bin/placeholder/MundiPagg.Api.Products.Domain.dll": {}
         },
         "runtime": {
-          "bin/placeholder/MundiPagg.Api.Product.Domain.dll": {}
+          "bin/placeholder/MundiPagg.Api.Products.Domain.dll": {}
         }
       },
-      "MundiPagg.Api.Product.Ioc/1.0.0": {
+      "MundiPagg.Api.Products.Infrastructrure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.0",
+        "dependencies": {
+          "AutoMapper": "6.2.2",
+          "Microsoft.NET.Test.Sdk": "15.5.0",
+          "Microsoft.NETCore.App": "2.0.0",
+          "MundPagg.Api.Products.Dto": "1.0.0",
+          "MundiPagg.Api.Products.Domain": "1.0.0",
+          "xunit": "2.3.1",
+          "xunit.runner.visualstudio": "2.3.1"
+        },
+        "compile": {
+          "bin/placeholder/MundiPagg.Api.Products.Infrastructrure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MundiPagg.Api.Products.Infrastructrure.dll": {}
+        }
+      },
+      "MundiPagg.Api.Products.Ioc/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.0",
         "dependencies": {
@@ -5460,50 +5530,70 @@
           "Microsoft.NET.Test.Sdk": "15.5.0",
           "Microsoft.NETCore.App": "2.0.0",
           "MongoDB.Driver": "2.6.0",
-          "MundPagg.Api.Product.Dto": "1.0.0",
-          "MundiPagg.Api.Product.Application": "1.0.0",
-          "MundiPagg.Api.Product.Data.Mongo": "1.0.0",
-          "MundiPagg.Api.Product.Domain": "1.0.0",
-          "MundiPagg.Api.Product.UnitTest": "1.0.0",
+          "MundPagg.Api.Products.Dto": "1.0.0",
+          "MundiPagg.Api.Products.Application": "1.0.0",
+          "MundiPagg.Api.Products.Data.Mongo": "1.0.0",
+          "MundiPagg.Api.Products.Domain": "1.0.0",
           "xunit": "2.3.1",
           "xunit.runner.visualstudio": "2.3.1"
         },
         "compile": {
-          "bin/placeholder/MundiPagg.Api.Product.Ioc.dll": {}
+          "bin/placeholder/MundiPagg.Api.Products.Ioc.dll": {}
         },
         "runtime": {
-          "bin/placeholder/MundiPagg.Api.Product.Ioc.dll": {}
+          "bin/placeholder/MundiPagg.Api.Products.Ioc.dll": {}
         }
       },
-      "MundiPagg.Api.Product.UnitTest/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v2.0",
-        "dependencies": {
-          "Microsoft.NET.Test.Sdk": "15.5.0",
-          "Microsoft.NETCore.App": "2.0.0",
-          "xunit": "2.3.1",
-          "xunit.runner.visualstudio": "2.3.1"
-        },
-        "compile": {
-          "bin/placeholder/MundiPagg.Api.Product.UnitTest.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/MundiPagg.Api.Product.UnitTest.dll": {}
-        }
-      },
-      "MundPagg.Api.Product.Dto/1.0.0": {
+      "MundPagg.Api.Products.Dto/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.0",
         "compile": {
-          "bin/placeholder/MundPagg.Api.Product.Dto.dll": {}
+          "bin/placeholder/MundPagg.Api.Products.Dto.dll": {}
         },
         "runtime": {
-          "bin/placeholder/MundPagg.Api.Product.Dto.dll": {}
+          "bin/placeholder/MundPagg.Api.Products.Dto.dll": {}
         }
       }
     }
   },
   "libraries": {
+    "AutoMapper/6.2.2": {
+      "sha512": "eGKcnJdoF5rYMWPUaSPtlWdvua9xw4hnQN5kM/X4AXLGKghrtPIaMv+RYoA3sj0kyZ3X6wZ1Qj67F+u0pCCPaw==",
+      "type": "package",
+      "path": "automapper/6.2.2",
+      "files": [
+        "automapper.6.2.2.nupkg.sha512",
+        "automapper.nuspec",
+        "lib/net40/AutoMapper.dll",
+        "lib/net40/AutoMapper.xml",
+        "lib/net45/AutoMapper.dll",
+        "lib/net45/AutoMapper.xml",
+        "lib/netstandard1.1/AutoMapper.dll",
+        "lib/netstandard1.1/AutoMapper.xml",
+        "lib/netstandard1.3/AutoMapper.dll",
+        "lib/netstandard1.3/AutoMapper.xml"
+      ]
+    },
+    "AutoMapper.Extensions/1.0.0": {
+      "sha512": "DrN+U/+PJNhud+KYKXTdGufp9LgKjFwwxOUc/qSZeFEuK8Bt8Y4kGPmp76SmES89fXr3hw0suL/iFROmPoCw8Q==",
+      "type": "package",
+      "path": "automapper.extensions/1.0.0",
+      "files": [
+        "automapper.extensions.1.0.0.nupkg.sha512",
+        "automapper.extensions.nuspec",
+        "lib/netstandard1.3/AutoMapper.Extensions.dll"
+      ]
+    },
+    "AutoMapper.Extensions.Microsoft.DependencyInjection/3.2.0": {
+      "sha512": "528nEpAwniNn8Z6Ae9qTiM/kN4f0BxmWE9mDMEkqKKGxbuElmv6Kj9DVvTXECJkIt6ARerb9+vYbOifNpcwvXQ==",
+      "type": "package",
+      "path": "automapper.extensions.microsoft.dependencyinjection/3.2.0",
+      "files": [
+        "automapper.extensions.microsoft.dependencyinjection.3.2.0.nupkg.sha512",
+        "automapper.extensions.microsoft.dependencyinjection.nuspec",
+        "lib/netstandard2.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll"
+      ]
+    },
     "DnsClient/1.0.7": {
       "sha512": "f3k5ufhUSL658fy/ac1mReqRIr0jGMyOJFvBqJ+7cASq01NIysYbrrRDjboYKAGrd0Y2mc1A749uQvT8vAA91A==",
       "type": "package",
@@ -10844,10 +10934,10 @@
         "system.linq.expressions.nuspec"
       ]
     },
-    "System.Linq.Queryable/4.0.1": {
-      "sha512": "Yn/WfYe9RoRfmSLvUt2JerP0BTGGykCZkQPgojaxgzF2N0oPo+/AhB8TXOpdCcNlrG3VRtsamtK2uzsp3cqRVw==",
+    "System.Linq.Queryable/4.3.0": {
+      "sha512": "In1Bmmvl/j52yPu3xgakQSI0YIckPUr870w4K5+Lak3JCCa8hl+my65lABOuKfYs4ugmZy25ScFerC4nz8+b6g==",
       "type": "package",
-      "path": "system.linq.queryable/4.0.1",
+      "path": "system.linq.queryable/4.3.0",
       "files": [
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
@@ -10897,7 +10987,7 @@
         "ref/xamarinmac20/_._",
         "ref/xamarintvos10/_._",
         "ref/xamarinwatchos10/_._",
-        "system.linq.queryable.4.0.1.nupkg.sha512",
+        "system.linq.queryable.4.3.0.nupkg.sha512",
         "system.linq.queryable.nuspec"
       ]
     },
@@ -14088,44 +14178,47 @@
         "xunit.runner.visualstudio.nuspec"
       ]
     },
-    "MundiPagg.Api.Product.Application/1.0.0": {
+    "MundiPagg.Api.Products.Application/1.0.0": {
       "type": "project",
-      "path": "../MundiPagg.Api.Product.Application/MundiPagg.Api.Product.Application.csproj",
-      "msbuildProject": "../MundiPagg.Api.Product.Application/MundiPagg.Api.Product.Application.csproj"
+      "path": "../MundiPagg.Api.Product.Application/MundiPagg.Api.Products.Application.csproj",
+      "msbuildProject": "../MundiPagg.Api.Product.Application/MundiPagg.Api.Products.Application.csproj"
     },
-    "MundiPagg.Api.Product.Data.Mongo/1.0.0": {
+    "MundiPagg.Api.Products.Data.Mongo/1.0.0": {
       "type": "project",
-      "path": "../MundiPagg.Api.Product.Data.Mongo/MundiPagg.Api.Product.Data.Mongo.csproj",
-      "msbuildProject": "../MundiPagg.Api.Product.Data.Mongo/MundiPagg.Api.Product.Data.Mongo.csproj"
+      "path": "../MundiPagg.Api.Product.Data.Mongo/MundiPagg.Api.Products.Data.Mongo.csproj",
+      "msbuildProject": "../MundiPagg.Api.Product.Data.Mongo/MundiPagg.Api.Products.Data.Mongo.csproj"
     },
-    "MundiPagg.Api.Product.Domain/1.0.0": {
+    "MundiPagg.Api.Products.Domain/1.0.0": {
       "type": "project",
-      "path": "../MundiPagg.Api.Produto.Domain/MundiPagg.Api.Product.Domain.csproj",
-      "msbuildProject": "../MundiPagg.Api.Produto.Domain/MundiPagg.Api.Product.Domain.csproj"
+      "path": "../MundiPagg.Api.Produto.Domain/MundiPagg.Api.Products.Domain.csproj",
+      "msbuildProject": "../MundiPagg.Api.Produto.Domain/MundiPagg.Api.Products.Domain.csproj"
     },
-    "MundiPagg.Api.Product.Ioc/1.0.0": {
+    "MundiPagg.Api.Products.Infrastructrure/1.0.0": {
       "type": "project",
-      "path": "../MundiPagg.Api.Product.Ioc/MundiPagg.Api.Product.Ioc.csproj",
-      "msbuildProject": "../MundiPagg.Api.Product.Ioc/MundiPagg.Api.Product.Ioc.csproj"
+      "path": "../MundiPagg.Api.Product.Infrastructrure/MundiPagg.Api.Products.Infrastructrure.csproj",
+      "msbuildProject": "../MundiPagg.Api.Product.Infrastructrure/MundiPagg.Api.Products.Infrastructrure.csproj"
     },
-    "MundiPagg.Api.Product.UnitTest/1.0.0": {
+    "MundiPagg.Api.Products.Ioc/1.0.0": {
       "type": "project",
-      "path": "../MundiPagg.Api.Product.UnitTest/MundiPagg.Api.Product.UnitTest.csproj",
-      "msbuildProject": "../MundiPagg.Api.Product.UnitTest/MundiPagg.Api.Product.UnitTest.csproj"
+      "path": "../MundiPagg.Api.Product.Ioc/MundiPagg.Api.Products.Ioc.csproj",
+      "msbuildProject": "../MundiPagg.Api.Product.Ioc/MundiPagg.Api.Products.Ioc.csproj"
     },
-    "MundPagg.Api.Product.Dto/1.0.0": {
+    "MundPagg.Api.Products.Dto/1.0.0": {
       "type": "project",
-      "path": "../MundPagg.Api.Product.Dto/MundPagg.Api.Product.Dto.csproj",
-      "msbuildProject": "../MundPagg.Api.Product.Dto/MundPagg.Api.Product.Dto.csproj"
+      "path": "../MundPagg.Api.Product.Dto/MundPagg.Api.Products.Dto.csproj",
+      "msbuildProject": "../MundPagg.Api.Product.Dto/MundPagg.Api.Products.Dto.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.0": [
+      "AutoMapper >= 6.2.2",
+      "AutoMapper.Extensions >= 1.0.0",
+      "AutoMapper.Extensions.Microsoft.DependencyInjection >= 3.2.0",
       "Microsoft.AspNetCore.All >= 2.0.5",
       "Microsoft.NETCore.App >= 2.0.0",
-      "MundiPagg.Api.Product.Application >= 1.0.0",
-      "MundiPagg.Api.Product.Data.Mongo >= 1.0.0",
-      "MundiPagg.Api.Product.Ioc >= 1.0.0"
+      "MundiPagg.Api.Products.Application >= 1.0.0",
+      "MundiPagg.Api.Products.Data.Mongo >= 1.0.0",
+      "MundiPagg.Api.Products.Ioc >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -14136,9 +14229,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\User\\Documents\\Develop\\git\\desafio-stone\\desafio-stone\\MundiPagg.Api.Produto\\WebApplication1\\MundiPagg.Api.Product.Api.csproj",
-      "projectName": "MundiPagg.Api.Product.Api",
-      "projectPath": "C:\\Users\\User\\Documents\\Develop\\git\\desafio-stone\\desafio-stone\\MundiPagg.Api.Produto\\WebApplication1\\MundiPagg.Api.Product.Api.csproj",
+      "projectUniqueName": "C:\\Users\\User\\Documents\\Develop\\git\\desafio-stone\\desafio-stone\\MundiPagg.Api.Produto\\WebApplication1\\MundiPagg.Api.Products.Api.csproj",
+      "projectName": "MundiPagg.Api.Products.Api",
+      "projectPath": "C:\\Users\\User\\Documents\\Develop\\git\\desafio-stone\\desafio-stone\\MundiPagg.Api.Produto\\WebApplication1\\MundiPagg.Api.Products.Api.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\User\\Documents\\Develop\\git\\desafio-stone\\desafio-stone\\MundiPagg.Api.Produto\\WebApplication1\\obj\\",
       "projectStyle": "PackageReference",
@@ -14162,14 +14255,14 @@
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
-            "C:\\Users\\User\\Documents\\Develop\\git\\desafio-stone\\desafio-stone\\MundiPagg.Api.Produto\\MundiPagg.Api.Product.Application\\MundiPagg.Api.Product.Application.csproj": {
-              "projectPath": "C:\\Users\\User\\Documents\\Develop\\git\\desafio-stone\\desafio-stone\\MundiPagg.Api.Produto\\MundiPagg.Api.Product.Application\\MundiPagg.Api.Product.Application.csproj"
+            "C:\\Users\\User\\Documents\\Develop\\git\\desafio-stone\\desafio-stone\\MundiPagg.Api.Produto\\MundiPagg.Api.Product.Application\\MundiPagg.Api.Products.Application.csproj": {
+              "projectPath": "C:\\Users\\User\\Documents\\Develop\\git\\desafio-stone\\desafio-stone\\MundiPagg.Api.Produto\\MundiPagg.Api.Product.Application\\MundiPagg.Api.Products.Application.csproj"
             },
-            "C:\\Users\\User\\Documents\\Develop\\git\\desafio-stone\\desafio-stone\\MundiPagg.Api.Produto\\MundiPagg.Api.Product.Data.Mongo\\MundiPagg.Api.Product.Data.Mongo.csproj": {
-              "projectPath": "C:\\Users\\User\\Documents\\Develop\\git\\desafio-stone\\desafio-stone\\MundiPagg.Api.Produto\\MundiPagg.Api.Product.Data.Mongo\\MundiPagg.Api.Product.Data.Mongo.csproj"
+            "C:\\Users\\User\\Documents\\Develop\\git\\desafio-stone\\desafio-stone\\MundiPagg.Api.Produto\\MundiPagg.Api.Product.Data.Mongo\\MundiPagg.Api.Products.Data.Mongo.csproj": {
+              "projectPath": "C:\\Users\\User\\Documents\\Develop\\git\\desafio-stone\\desafio-stone\\MundiPagg.Api.Produto\\MundiPagg.Api.Product.Data.Mongo\\MundiPagg.Api.Products.Data.Mongo.csproj"
             },
-            "C:\\Users\\User\\Documents\\Develop\\git\\desafio-stone\\desafio-stone\\MundiPagg.Api.Produto\\MundiPagg.Api.Product.Ioc\\MundiPagg.Api.Product.Ioc.csproj": {
-              "projectPath": "C:\\Users\\User\\Documents\\Develop\\git\\desafio-stone\\desafio-stone\\MundiPagg.Api.Produto\\MundiPagg.Api.Product.Ioc\\MundiPagg.Api.Product.Ioc.csproj"
+            "C:\\Users\\User\\Documents\\Develop\\git\\desafio-stone\\desafio-stone\\MundiPagg.Api.Produto\\MundiPagg.Api.Product.Ioc\\MundiPagg.Api.Products.Ioc.csproj": {
+              "projectPath": "C:\\Users\\User\\Documents\\Develop\\git\\desafio-stone\\desafio-stone\\MundiPagg.Api.Produto\\MundiPagg.Api.Product.Ioc\\MundiPagg.Api.Products.Ioc.csproj"
             }
           }
         }
@@ -14183,6 +14276,18 @@
     "frameworks": {
       "netcoreapp2.0": {
         "dependencies": {
+          "AutoMapper": {
+            "target": "Package",
+            "version": "[6.2.2, )"
+          },
+          "AutoMapper.Extensions": {
+            "target": "Package",
+            "version": "[1.0.0, )"
+          },
+          "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+            "target": "Package",
+            "version": "[3.2.0, )"
+          },
           "Microsoft.AspNetCore.All": {
             "target": "Package",
             "version": "[2.0.5, )"

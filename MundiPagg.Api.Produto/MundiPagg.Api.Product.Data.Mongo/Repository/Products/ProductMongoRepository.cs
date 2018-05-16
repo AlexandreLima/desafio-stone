@@ -9,6 +9,7 @@ using Microsoft.Extensions.Configuration;
 using MundiPagg.Api.Products.Data.Mongo.Repository.Products.Contract;
 using MongoDB.Driver;
 using System.Linq;
+using MundiPagg.Api.Products.Infrastructrure.Pagin;
 
 namespace MundiPagg.Api.Products.Data.Mongo.Repository.Products
 {
@@ -27,13 +28,13 @@ namespace MundiPagg.Api.Products.Data.Mongo.Repository.Products
         public void Edit(Domain.Products.Product entity)
         {
             this.db.GetCollection<Product>("Product")
-                    .ReplaceOne(x => x.ID == entity.ID, entity);
+                    .ReplaceOne(x => x.Id == entity.Id, entity);
         }
 
-        public Product Get(ObjectId id)
+        public Product Get(Guid id)
         {
             return this.db.GetCollection<Product>("Product")
-                    .Find(x => x.ID == id)
+                    .Find(x => x.Id == id)
                     .FirstOrDefault();
         }
 
@@ -41,14 +42,13 @@ namespace MundiPagg.Api.Products.Data.Mongo.Repository.Products
         {
             return this.db.GetCollection<Product>("Product")
                             .AsQueryable()
-                            .Skip(pagin)
-                            .Take(paginRows)
+                            .Page(paginRows, pagin)
                             .ToList();
          }
 
-        public void Remove(ObjectId id)
+        public void Remove(Guid id)
         {
-            this.db.GetCollection<Product>("Product").DeleteOne(x => x.ID == id);
+            this.db.GetCollection<Product>("Product").DeleteOne(x => x.Id == id);
         }
     }
 }

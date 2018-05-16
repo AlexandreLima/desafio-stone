@@ -671,9 +671,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\User\\Documents\\Develop\\git\\desafio-stone\\desafio-stone\\MundiPagg.Api.Produto\\MundPagg.Api.Product.Dto\\MundPagg.Api.Product.Dto.csproj",
-      "projectName": "MundPagg.Api.Product.Dto",
-      "projectPath": "C:\\Users\\User\\Documents\\Develop\\git\\desafio-stone\\desafio-stone\\MundiPagg.Api.Produto\\MundPagg.Api.Product.Dto\\MundPagg.Api.Product.Dto.csproj",
+      "projectUniqueName": "C:\\Users\\User\\Documents\\Develop\\git\\desafio-stone\\desafio-stone\\MundiPagg.Api.Produto\\MundPagg.Api.Product.Dto\\MundPagg.Api.Products.Dto.csproj",
+      "projectName": "MundPagg.Api.Products.Dto",
+      "projectPath": "C:\\Users\\User\\Documents\\Develop\\git\\desafio-stone\\desafio-stone\\MundiPagg.Api.Produto\\MundPagg.Api.Product.Dto\\MundPagg.Api.Products.Dto.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\User\\Documents\\Develop\\git\\desafio-stone\\desafio-stone\\MundiPagg.Api.Produto\\MundPagg.Api.Product.Dto\\obj\\",
       "projectStyle": "PackageReference",

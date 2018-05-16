@@ -16,34 +16,42 @@ namespace WebApplication1.Controllers
             this.productApplication = productApplication;
 
         // GET api/values
-        [HttpGet]
-        public IEnumerable<string> Get()
+        [HttpGet("pagin/{pagin}/itemsPerPagin/{itemsPerPagin}")]
+        public IEnumerable<ProductDto> Get(int pagin, int itemsPerPagin)
         {
-            return new string[] { "value1", "value2" };
+            return productApplication.All(itemsPerPagin, pagin);
         }
 
         // GET api/values/5
         [HttpGet("{id}")]
-        public string Get(int id)
+        public ProductDto Get(Guid id)
         {
-            return "value";
+            return productApplication.Detail(id);
         }
 
         // POST api/values
         [HttpPost]
-        public void Post([FromBody]AddProductDto product) =>
-            productApplication.Add(product);
+        public StatusCodeResult Post([FromBody]AddProductDto productDto)
+        {
+            productApplication.Add(productDto);
+            return new StatusCodeResult(201);
+        }
+            
 
         // PUT api/values/5
         [HttpPut("{id}")]
-        public void Put(int id, [FromBody]string value)
+        public StatusCodeResult Put(Guid id, [FromBody]EditProductDto productDto)
         {
+            productApplication.Edit(productDto);
+            return NoContent();
         }
 
         // DELETE api/values/5
         [HttpDelete("{id}")]
-        public void Delete(int id)
+        public StatusCodeResult Delete(Guid id)
         {
+            productApplication.Remove(id);
+            return NoContent();
         }
     }
 }

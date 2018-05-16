@@ -6,6 +6,6 @@ namespace MundiPagg.Api.Products.Domain.Utilities
 {
     public interface IAggregateRoot<T>
     {
-        T ID { get; } 
+        T Id { get; } 
     }
 }

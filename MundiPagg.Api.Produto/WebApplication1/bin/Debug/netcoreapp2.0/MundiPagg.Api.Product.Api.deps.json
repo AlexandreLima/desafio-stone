@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.0",
-    "signature": "c9d83b0038a6559688877d0d04fa559d3518f0bb"
+    "signature": "447177f53b5f72f00763b74bda389df145291a2b"
   },
   "compilationOptions": {
     "defines": [
@@ -23,6 +23,9 @@
     ".NETCoreApp,Version=v2.0": {
       "MundiPagg.Api.Product.Api/1.0.0": {
         "dependencies": {
+          "AutoMapper": "6.2.2",
+          "AutoMapper.Extensions": "1.0.0",
+          "AutoMapper.Extensions.Microsoft.DependencyInjection": "3.2.0",
           "Microsoft.AspNetCore.All": "2.0.5",
           "Microsoft.NETCore.App": "2.0.0",
           "MundiPagg.Api.Product.Application": "1.0.0",
@@ -34,6 +37,52 @@
         },
         "compile": {
           "MundiPagg.Api.Product.Api.dll": {}
+        }
+      },
+      "AutoMapper/6.2.2": {
+        "dependencies": {
+          "Microsoft.CSharp": "4.4.0",
+          "NETStandard.Library": "2.0.0",
+          "System.Collections.Concurrent": "4.3.0",
+          "System.Collections.Specialized": "4.3.0",
+          "System.ComponentModel.TypeConverter": "4.3.0",
+          "System.Dynamic.Runtime": "4.3.0",
+          "System.Linq.Queryable": "4.3.0",
+          "System.Reflection.Emit": "4.3.0",
+          "System.Resources.ResourceManager": "4.3.0",
+          "System.Runtime.Serialization.Primitives": "4.3.0",
+          "System.Text.RegularExpressions": "4.3.0"
+        },
+        "runtime": {
+          "lib/netstandard1.3/AutoMapper.dll": {}
+        },
+        "compile": {
+          "lib/netstandard1.3/AutoMapper.dll": {}
+        }
+      },
+      "AutoMapper.Extensions/1.0.0": {
+        "dependencies": {
+          "AutoMapper": "6.2.2",
+          "NETStandard.Library": "2.0.0"
+        },
+        "runtime": {
+          "lib/netstandard1.3/AutoMapper.Extensions.dll": {}
+        },
+        "compile": {
+          "lib/netstandard1.3/AutoMapper.Extensions.dll": {}
+        }
+      },
+      "AutoMapper.Extensions.Microsoft.DependencyInjection/3.2.0": {
+        "dependencies": {
+          "AutoMapper": "6.2.2",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "2.0.0",
+          "Microsoft.Extensions.DependencyModel": "2.0.3"
+        },
+        "runtime": {
+          "lib/netstandard2.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll": {}
+        },
+        "compile": {
+          "lib/netstandard2.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll": {}
         }
       },
       "DnsClient/1.0.7": {
@@ -2627,7 +2676,7 @@
           "MongoDB.Driver.Core": "2.6.0",
           "NETStandard.Library": "2.0.0",
           "System.ComponentModel.TypeConverter": "4.3.0",
-          "System.Linq.Queryable": "4.0.1"
+          "System.Linq.Queryable": "4.3.0"
         },
         "runtime": {
           "lib/netstandard1.5/MongoDB.Driver.dll": {}
@@ -2708,7 +2757,7 @@
           "System.Diagnostics.Debug": "4.3.0",
           "System.Linq": "4.3.0",
           "System.Linq.Expressions": "4.3.0",
-          "System.Linq.Queryable": "4.0.1",
+          "System.Linq.Queryable": "4.3.0",
           "System.ObjectModel": "4.3.0",
           "System.Reflection": "4.3.0",
           "System.Reflection.Extensions": "4.3.0",
@@ -3402,7 +3451,7 @@
           "System.Threading": "4.3.0"
         }
       },
-      "System.Linq.Queryable/4.0.1": {
+      "System.Linq.Queryable/4.3.0": {
         "dependencies": {
           "System.Collections": "4.3.0",
           "System.Diagnostics.Debug": "4.3.0",
@@ -4386,6 +4435,7 @@
       },
       "MundiPagg.Api.Product.Application/1.0.0": {
         "dependencies": {
+          "AutoMapper": "6.2.2",
           "MongoDB.Driver": "2.6.0",
           "MundPagg.Api.Product.Dto": "1.0.0",
           "MundiPagg.Api.Product.Data.Mongo": "1.0.0",
@@ -4648,6 +4698,27 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "AutoMapper/6.2.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-eGKcnJdoF5rYMWPUaSPtlWdvua9xw4hnQN5kM/X4AXLGKghrtPIaMv+RYoA3sj0kyZ3X6wZ1Qj67F+u0pCCPaw==",
+      "path": "automapper/6.2.2",
+      "hashPath": "automapper.6.2.2.nupkg.sha512"
+    },
+    "AutoMapper.Extensions/1.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-DrN+U/+PJNhud+KYKXTdGufp9LgKjFwwxOUc/qSZeFEuK8Bt8Y4kGPmp76SmES89fXr3hw0suL/iFROmPoCw8Q==",
+      "path": "automapper.extensions/1.0.0",
+      "hashPath": "automapper.extensions.1.0.0.nupkg.sha512"
+    },
+    "AutoMapper.Extensions.Microsoft.DependencyInjection/3.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-528nEpAwniNn8Z6Ae9qTiM/kN4f0BxmWE9mDMEkqKKGxbuElmv6Kj9DVvTXECJkIt6ARerb9+vYbOifNpcwvXQ==",
+      "path": "automapper.extensions.microsoft.dependencyinjection/3.2.0",
+      "hashPath": "automapper.extensions.microsoft.dependencyinjection.3.2.0.nupkg.sha512"
     },
     "DnsClient/1.0.7": {
       "type": "package",
@@ -6308,12 +6379,12 @@
       "path": "system.linq.expressions/4.3.0",
       "hashPath": "system.linq.expressions.4.3.0.nupkg.sha512"
     },
-    "System.Linq.Queryable/4.0.1": {
+    "System.Linq.Queryable/4.3.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-Yn/WfYe9RoRfmSLvUt2JerP0BTGGykCZkQPgojaxgzF2N0oPo+/AhB8TXOpdCcNlrG3VRtsamtK2uzsp3cqRVw==",
-      "path": "system.linq.queryable/4.0.1",
-      "hashPath": "system.linq.queryable.4.0.1.nupkg.sha512"
+      "sha512": "sha512-In1Bmmvl/j52yPu3xgakQSI0YIckPUr870w4K5+Lak3JCCa8hl+my65lABOuKfYs4ugmZy25ScFerC4nz8+b6g==",
+      "path": "system.linq.queryable/4.3.0",
+      "hashPath": "system.linq.queryable.4.3.0.nupkg.sha512"
     },
     "System.Net.Http/4.3.0": {
       "type": "package",
