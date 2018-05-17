@@ -5,7 +5,7 @@ using System.Text;
 using MundiPagg.Api.Products.Domain.Products;
 using MongoDB.Bson.Serialization.IdGenerators;
 
-namespace MundiPagg.Api.Product.Ioc
+namespace MundiPagg.Api.Products.Ioc
 {
     public class MapMongoDatabase
     {

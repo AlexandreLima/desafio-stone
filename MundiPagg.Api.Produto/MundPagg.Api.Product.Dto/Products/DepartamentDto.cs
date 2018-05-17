@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace MundPagg.Api.Product.Dto.Products
+namespace MundiPagg.Api.Products.Dto.Products
 {
     public class DepartamentDto
     {

@@ -21,6 +21,7 @@
     <ProjectReference Include="..\MundiPagg.Api.Product.Infrastructrure\MundiPagg.Api.Products.Infrastructrure.csproj" />
     <ProjectReference Include="..\MundiPagg.Api.Produto.Domain\MundiPagg.Api.Products.Domain.csproj" />
     <ProjectReference Include="..\MundPagg.Api.Product.Dto\MundPagg.Api.Products.Dto.csproj" />
+    <ProjectReference Include="..\WebApplication1\MundiPagg.Api.Products.Api.csproj" />
   </ItemGroup>
 
 </Project>

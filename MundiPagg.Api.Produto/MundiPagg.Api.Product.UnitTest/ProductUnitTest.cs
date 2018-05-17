@@ -5,7 +5,7 @@ using MundiPagg.Api.Products.Data.Mongo.Repository.Products.Contract;
 using MundiPagg.Api.Products.Domain.Products;
 using MundiPagg.Api.Products.Domain.Repository;
 using MundiPagg.Api.Products.UnitTest.Builder;
-using MundPagg.Api.Product.Dto.Products;
+using MundiPagg.Api.Products.Dto.Products;
 using System;
 using Xunit;
 using FluentAssertions;
@@ -14,6 +14,9 @@ using System.Collections.Generic;
 using System.Linq;
 using MundiPagg.Api.Products.Infrastructrure.Mapping;
 using MundiPagg.Api.Products.Infrastructrure.Pagin;
+using MundiPagg.Api.Products.Infrastructrure.Exception;
+using MundPagg.Api.Product.Dto.Products;
+using MundiPagg.Api.Products.UnitTest.Utils;
 
 namespace MundiPagg.Api.Products.UnitTest
 {
@@ -33,7 +36,11 @@ namespace MundiPagg.Api.Products.UnitTest
         [Fact]
         public void InsertProduct()
         {
-            var produto = ProductBuilder.Create.Instance();
+            var produto = ProductBuilder.Create
+                            .WithCode("testCode")
+                            .WithName("testName")
+                            .WithDepartment("testDepartament")
+                            .Instance();
 
             repositorioMock.Setup(x => x.Add(It.IsAny<Product>())).Verifiable();
 
@@ -47,7 +54,11 @@ namespace MundiPagg.Api.Products.UnitTest
         [Fact]
         public void UpdateProduct()
         {
-            var produto = ProductBuilder.Create.Instance();
+            var produto = ProductBuilder.Create
+                            .WithCode("testCode")
+                            .WithName("testName")
+                            .WithDepartment("testDepartament")
+                            .Instance();
 
             repositorioMock.Setup(x => x.Edit(It.IsAny<Product>())).Verifiable();
 
@@ -127,11 +138,11 @@ namespace MundiPagg.Api.Products.UnitTest
             repositorioMock.Setup(x => x.GetAll(It.IsAny<int>(), It.IsAny<int>())).Returns(() => produtosQueryable);
             Guid guid = Guid.NewGuid();
 
-            Mapper.Initialize(x => x.AddProfile(new MappingProfile()));
+            var mapperObj = MapperContext.GetMapper();
 
             mapper.Setup(x => x.Map<IEnumerable<ProductDto>>(It.IsAny<IEnumerable<Product>>()))
                 .Returns(() =>
-                           Mapper.Map(produtosQueryable, produtosQueryable.GetType(), typeof(IEnumerable<ProductDto>)) as IEnumerable<ProductDto>);
+                             mapperObj.Map(produtosQueryable, produtosQueryable.GetType(), typeof(IEnumerable<ProductDto>)) as IEnumerable<ProductDto>);
 
             
             var productsDto = productApplication.All(paginItems, pagin);
@@ -140,6 +151,20 @@ namespace MundiPagg.Api.Products.UnitTest
             productsDto.Should().BeOfType<List<ProductDto>>();
             productsDto.Count().Should().Be(5);
 
+        }
+
+        [Fact]
+        public void DeveRetornarDomainExceptionComProdutoVazio()
+        {
+            var produto = ProductBuilder.Create.Instance();
+
+            repositorioMock.Setup(x => x.Add(It.IsAny<Product>()))
+                .Verifiable();
+
+            mapper.Setup(x => x.Map<Product>(It.IsAny<AddProductDto>()))
+                .Returns(() => produto);
+
+            Assert.Throws<DomainException>(() => productApplication.Add(new AddProductDto()));
         }
     }
 }

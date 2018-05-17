@@ -9,7 +9,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
-using MundiPagg.Api.Product.Ioc;
+using MundiPagg.Api.Products.Ioc;
+using MundiPagg.Api.Products.Api.Component;
 using MundiPagg.Api.Products.Ioc;
 
 namespace WebApplication1
@@ -26,7 +27,11 @@ namespace WebApplication1
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddMvc();
+            services.AddMvc(options => 
+            {
+                options.Filters.Add(new ApiExceptionFilter());
+            });
+
             services.AddDepedencyInjection();
             services.AddAutoMapper();
             MapMongoDatabase.Map();

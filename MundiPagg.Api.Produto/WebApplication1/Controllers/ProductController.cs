@@ -4,9 +4,10 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using MundiPagg.Api.Products.Application.Products.Contracts;
+using MundiPagg.Api.Products.Dto.Products;
 using MundPagg.Api.Product.Dto.Products;
 
-namespace WebApplication1.Controllers
+namespace MundiPagg.Api.Products.Api
 {
     [Route("api/[controller]")]
     public class ProductController : Controller

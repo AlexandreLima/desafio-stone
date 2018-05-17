@@ -23,3 +23,7 @@ C:\Users\User\Documents\Develop\git\desafio-stone\desafio-stone\MundiPagg.Api.Pr
 C:\Users\User\Documents\Develop\git\desafio-stone\desafio-stone\MundiPagg.Api.Produto\MundiPagg.Api.Product.UnitTest\obj\Debug\netcoreapp2.0\MundiPagg.Api.Products.UnitTest.csproj.CopyComplete
 C:\Users\User\Documents\Develop\git\desafio-stone\desafio-stone\MundiPagg.Api.Produto\MundiPagg.Api.Product.UnitTest\obj\Debug\netcoreapp2.0\MundiPagg.Api.Products.UnitTest.dll
 C:\Users\User\Documents\Develop\git\desafio-stone\desafio-stone\MundiPagg.Api.Produto\MundiPagg.Api.Product.UnitTest\obj\Debug\netcoreapp2.0\MundiPagg.Api.Products.UnitTest.pdb
+C:\Users\User\Documents\Develop\git\desafio-stone\desafio-stone\MundiPagg.Api.Produto\MundiPagg.Api.Product.UnitTest\bin\Debug\netcoreapp2.0\MundiPagg.Api.Products.Api.dll
+C:\Users\User\Documents\Develop\git\desafio-stone\desafio-stone\MundiPagg.Api.Produto\MundiPagg.Api.Product.UnitTest\bin\Debug\netcoreapp2.0\MundiPagg.Api.Products.Ioc.dll
+C:\Users\User\Documents\Develop\git\desafio-stone\desafio-stone\MundiPagg.Api.Produto\MundiPagg.Api.Product.UnitTest\bin\Debug\netcoreapp2.0\MundiPagg.Api.Products.Api.pdb
+C:\Users\User\Documents\Develop\git\desafio-stone\desafio-stone\MundiPagg.Api.Produto\MundiPagg.Api.Product.UnitTest\bin\Debug\netcoreapp2.0\MundiPagg.Api.Products.Ioc.pdb

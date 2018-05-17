@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.0",
-    "signature": "0c9aab3a92c9b7a32604a1680c8487e1e008a9f7"
+    "signature": "16681169efaae5a04568f4411731ad0ad7c2b9b2"
   },
   "compilationOptions": {},
   "targets": {
@@ -59,6 +59,16 @@
         },
         "runtime": {
           "lib/netstandard1.3/DnsClient.dll": {}
+        }
+      },
+      "FluentValidation/7.5.2": {
+        "dependencies": {
+          "System.Collections.Concurrent": "4.3.0",
+          "System.ComponentModel.Annotations": "4.4.1",
+          "System.ComponentModel.Primitives": "4.3.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/FluentValidation.dll": {}
         }
       },
       "Microsoft.CodeCoverage/1.0.3": {
@@ -575,6 +585,7 @@
           "System.Runtime": "4.3.0"
         }
       },
+      "System.ComponentModel.Annotations/4.4.1": {},
       "System.ComponentModel.EventBasedAsync/4.0.11": {
         "dependencies": {
           "System.Resources.ResourceManager": "4.3.0",
@@ -1595,7 +1606,8 @@
         "dependencies": {
           "Microsoft.Extensions.Configuration": "2.0.2",
           "MongoDB.Driver": "2.6.0",
-          "MundiPagg.Api.Products.Domain": "1.0.0"
+          "MundiPagg.Api.Products.Domain": "1.0.0",
+          "MundiPagg.Api.Products.Infrastructrure": "1.0.0"
         },
         "runtime": {
           "MundiPagg.Api.Products.Data.Mongo.dll": {}
@@ -1603,10 +1615,24 @@
       },
       "MundiPagg.Api.Products.Domain/1.0.0": {
         "dependencies": {
+          "FluentValidation": "7.5.2",
           "MongoDB.Driver": "2.6.0"
         },
         "runtime": {
           "MundiPagg.Api.Products.Domain.dll": {}
+        }
+      },
+      "MundiPagg.Api.Products.Infrastructrure/1.0.0": {
+        "dependencies": {
+          "AutoMapper": "6.2.2",
+          "Microsoft.NET.Test.Sdk": "15.5.0",
+          "MundPagg.Api.Products.Dto": "1.0.0",
+          "MundiPagg.Api.Products.Domain": "1.0.0",
+          "xunit": "2.3.1",
+          "xunit.runner.visualstudio": "2.3.1"
+        },
+        "runtime": {
+          "MundiPagg.Api.Products.Infrastructrure.dll": {}
         }
       },
       "MundPagg.Api.Products.Dto/1.0.0": {
@@ -1635,6 +1661,13 @@
       "sha512": "sha512-f3k5ufhUSL658fy/ac1mReqRIr0jGMyOJFvBqJ+7cASq01NIysYbrrRDjboYKAGrd0Y2mc1A749uQvT8vAA91A==",
       "path": "dnsclient/1.0.7",
       "hashPath": "dnsclient.1.0.7.nupkg.sha512"
+    },
+    "FluentValidation/7.5.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-AQMyeK9eP0+EKBsBuO6RhAiTmyTC32is6EX+cAMBOSCMvExeohtg3vNM1xUoenpb1mjwZfuoJXLz7QfiC7Bn2A==",
+      "path": "fluentvalidation/7.5.2",
+      "hashPath": "fluentvalidation.7.5.2.nupkg.sha512"
     },
     "Microsoft.CodeCoverage/1.0.3": {
       "type": "package",
@@ -1852,6 +1885,13 @@
       "sha512": "sha512-VyGn1jGRZVfxnh8EdvDCi71v3bMXrsu8aYJOwoV7SNDLVhiEqwP86pPMyRGsDsxhXAm2b3o9OIqeETfN5qfezw==",
       "path": "system.componentmodel/4.3.0",
       "hashPath": "system.componentmodel.4.3.0.nupkg.sha512"
+    },
+    "System.ComponentModel.Annotations/4.4.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ToiYqSCioqhtspq2O/jYKtyTC/T0uwWHBTYlzCi6PRbSSHArN1IaRWeHffDamvms5sye5FDUWCfNZgubQpNRsA==",
+      "path": "system.componentmodel.annotations/4.4.1",
+      "hashPath": "system.componentmodel.annotations.4.4.1.nupkg.sha512"
     },
     "System.ComponentModel.EventBasedAsync/4.0.11": {
       "type": "package",
@@ -2417,6 +2457,11 @@
       "sha512": ""
     },
     "MundiPagg.Api.Products.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "MundiPagg.Api.Products.Infrastructrure/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

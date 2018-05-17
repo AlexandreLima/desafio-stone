@@ -15,8 +15,7 @@ namespace MundiPagg.Api.Products.Data.Mongo.Repository.Products
 {
     public class ProductMongoRepository : BaseRepository, IProductMongoRepository
     {
-        public ProductMongoRepository(IConfiguration configuration) 
-            : base(configuration)
+        public ProductMongoRepository() 
         {
 
         }

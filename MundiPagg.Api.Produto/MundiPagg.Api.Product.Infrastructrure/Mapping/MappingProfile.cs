@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using MundiPagg.Api.Products.Domain.Departaments;
 using MundiPagg.Api.Products.Domain.Products;
+using MundiPagg.Api.Products.Dto.Products;
 using MundPagg.Api.Product.Dto.Products;
 using System;
 using System.Collections.Generic;
