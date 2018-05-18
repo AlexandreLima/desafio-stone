@@ -35,7 +35,7 @@ A aplicação foi escrita com modelo de domínio DDD(Domain Driven Design), com 
 #### Possíveis arquiteturas
 Pelo fato do sistema ser de complexidade baixa, não foi necessário pensar em outros padrões com CQRS, Eventsourcing etc. 
    
-A aplicação foi escrita em REST respeitando de status HTTP de resposta do sistema:
+A aplicação foi escrita em REST respeitando alguma diretrizes de status HTTP de resposta no sistema:
  
  ```C#
 
