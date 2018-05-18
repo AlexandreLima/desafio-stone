@@ -31,7 +31,9 @@ A aplicação foi escrita com modelo de domínio DDD(Domain Driven Design), com 
    > Camada de IOC para injeção de dependência e acesso à todos recursos de camadas do sistema
    
    > Camada de teste unitários e testes de Api
-   
+
+#### Possíveis arquiteturas
+Pelo fato do sistema ser de complexidade baixa, não foi necessário pensar em outros padrões com CQRS, Eventsourcing etc. 
    
 A aplicação foi escrita em REST respeitando de status HTTP de resposta do sistema:
  
@@ -89,8 +91,39 @@ A aplicação foi escrita em REST respeitando de status HTTP de resposta do sist
     * Projetos de teste: Moq, FluentAssertions e XUnit
     
   
-
+ ### Melhorias necessárias
+ 
+ Algumas melhorias necessárias:
+ 
+Teste :  Será necessário uma melhoria no entendimento no ciclo de vida de testes para criação dos mapeamentos do Automapper, exemplo abaixo, foi uma solução de contorno para que não fosse gerado erro  na classe MapperContext:
+    
 ```C#
 
-int i = 0;
+ public class MapperContext
+    {
+        private static IMapper mapper;
+
+        public static IMapper GetMapper()
+        {
+            Mapper.Reset();
+
+            try
+            {
+                Mapper.Initialize(x => x.AddProfile(new MappingProfile()));
+            }
+            catch 
+            {
+            }
+           
+            mapper = Mapper.Configuration.CreateMapper();
+            return mapper;
+        }
+    }
+    
 ````
+Documentação : Swagger para documentação exposição dos endpoints
+    
+Melhoria no modelo de domínio, no mínimo a criação de um atributo para data de criação do produto, talvez uma ramificação de Skus
+
+
+    
