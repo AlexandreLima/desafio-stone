@@ -125,5 +125,11 @@ Documentação : Swagger para documentação exposição dos endpoints
     
 Melhoria no modelo de domínio, no mínimo a criação de um atributo para data de criação do produto, talvez uma ramificação de Skus
 
+### Docker & DockerCompose
+
+Não foi implementado nada em Docker, pelo fato do uso da ferramenta de para uso de containeres ser um pouco mais complexo em sistemas Windows, pelo fato de virtualização etc. Foi feita uma tentativa de instalação numa máquina virtual Linux Mint 18, mesmo assim foram encontrados alguns problemas. 
+
+Pelo fato do tempo ter sido um pouco curto, foi dado foco na entrega mais básica do funcionamento do sistema e seus testes.
+
 
     
